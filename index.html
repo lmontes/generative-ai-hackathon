@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hello Valencia Codes</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f0f0f0;
+			text-align: center;
+		}
+		h1 {
+			font-size: 3em;
+			margin-top: 30px;
+		}
+		.logo-container {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			margin-top: 50px;
+			position: relative;
+		}
+		.logo {
+			width: 400px;
+			height: auto;
+		}
+		.countdown {
+			font-size: 5em;
+			color: black;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+		.hidden {
+			display: none;
+		}
+		.video-container {
+			margin-top: 50px;
+		}
+		.video {
+			width: 640px;
+			height: 360px;
+		}
+	</style>
+</head>
+<body>
+	<h1>HELLO VALENCIACODES</h1>
+	<div class="logo-container">
+		<img class="logo" src="logo.jpeg" alt="ValenciaCodes Logo">
+		<div class="countdown">10</div>
+	</div>
+	<div class="video-container hidden">
+		<iframe class="video" src="https://www.youtube.com/embed/a3Z7zEc7AXQ?autoplay=1&rel=0"></iframe>
+	</div>
+	<script>
+		var countdown = 10;
+		var countdownInterval = setInterval(function() {
+			countdown--;
+			if (countdown <= 0) {
+				clearInterval(countdownInterval);
+				document.querySelector('.logo-container').classList.add('hidden');
+				document.querySelector('.video-container').classList.remove('hidden');
+			} else {
+				document.querySelector('.countdown').textContent = countdown;
+			}
+		}, 1000);
+	</script>
+</body>
+</html>
