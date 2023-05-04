@@ -1,6 +1,6 @@
 # Generative AI Hackathon
 
-Webpage made in the Generative AI Hackathon organized by [Valencia Codes](https://www.meetup.com/es-ES/valencia-codes).
+Webpage made in the Generative AI Hackathon organized by [Valencia Codes](https://valenciacodes.com).
 
 [DEMO](https://lmont.es/generative-ai-hackathon)
 
